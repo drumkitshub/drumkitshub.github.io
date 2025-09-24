@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1313ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101022",
+            },
+            fontFamily: {
+              display: ["Space Grotesk"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 border-b border-gray-200/50 dark:border-gray-800/50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2 text-gray-900 dark:text-white" href="#">
+<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-lg font-bold">DrumKitsHub</h2>
+</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Drumkits</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Plugins</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Tutorials</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Community</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500"> search </span>
+<input class="h-10 w-full max-w-xs rounded-lg border-0 bg-gray-200/50 dark:bg-gray-800/50 pl-10 pr-4 text-sm text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" placeholder="Search" type="search"/>
+</div>
+<button class="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200/50 dark:bg-gray-800/50 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined"> shopping_cart </span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+<div class="relative min-h-[480px] rounded-xl overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxQloLMEKtHzCFMvZij2oZmuDGPuqWKqTrAe4e7uDvVVIITWcmyJq7ast6sfyTZwM-a-JA04NSwQbzxy0TJMouIuXh5HBvA4rehSFv3ikN5StRuQQWqZMqWTJyFkdRI2dH5GmCpkoNm7cRadfGYqsHju3sQQKmij50E4E9nwRybzSdUWq5vrOqklqmIAEhoY7RJm-_hUXg_Y13Y05hwSDJrIKUxgXTTif2rUC3V5-Ajn9sJp9fjjgOyn1HrtVzP9Lch7HzREAnRS9o");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-background-dark/40 to-background-dark/10"></div>
+<div class="relative flex h-full min-h-[480px] flex-col items-center justify-center gap-6 p-8 text-center text-white">
+<h1 class="text-4xl sm:text-6xl font-bold tracking-tighter">Explorador de Drumkits y Plugins</h1>
+<p class="max-w-2xl text-base sm:text-lg text-gray-200 dark:text-gray-300">Explore a vast library of free drumkits and plugins to elevate your music production. Download now and start creating!</p>
+<form class="mt-4 flex w-full max-w-md items-center gap-2 rounded-full bg-white/10 p-2 backdrop-blur-sm">
+<span class="material-symbols-outlined pl-2 text-gray-300"> search </span>
+<input class="flex-1 bg-transparent text-white placeholder-gray-300 focus:outline-none" placeholder="Search for sounds" type="search"/>
+<button class="rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-black/50 transition-all" type="submit">
+                  Search
+                </button>
+</form>
+</div>
+</div>
+<section class="py-12 sm:py-16">
+<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white px-4">Featured Sounds</h2>
+<div class="mt-6">
+<div class="flex gap-4 overflow-x-auto pb-4 [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden px-4">
+<div class="flex-none w-64">
+<div class="group relative block overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqZ8Wj5cueMbSNLpBdsKOJouc4aek92Z4mkVBTfP4Cs36bmNzYIAL1lGXuKHHtpUTNRBJtW4gUQUCHNosnDrhjP3icrqJ7EvXBpw7RCSewCuyuhEBai4u2VZNZZ2iyjUX8tFkRfI9bIySPx7XJZmEQQlTbCRrJF-CguW5mLFWxFmIeoqqrSE6Fo5H3pofKVTg4YR91aTrHPESO5-gD1Y5cn6W5AEM4smEpkr13-T-tF2818nkOq155TdK2TW4Sm_sEoCJrrXju-59v"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 p-4">
+<h3 class="font-semibold text-white">Electro Beats Kit</h3>
+<p class="text-sm text-gray-300">Drumkit</p>
+</div>
+</div>
+</div>
+<div class="flex-none w-64">
+<div class="group relative block overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGu667rDfCXFm-z1zb7ZRRcQlQiZsm580Rtpkwnv2XC7HwnPqBwHJRkgr4vDzsuEr0_j7SKiCaL_x_QuQNVIeZNtF8rT6p6kbUidC2Amlv-nOLvA-RRr7_i6ZFC9PIsFh1UHz4e7jYHkRTaPG5d1W9eQAebcrgwWXznFDt-SoV98HU0RySYmVYExG8qPDrOoGiotF8IuHIcIOmzWxQO1qePFauz2_iRbFISdFh72JNNenaF92KfesIq89o-YKONUuRjRXfIdHgqUFf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 p-4">
+<h3 class="font-semibold text-white">Synthwave Pro</h3>
+<p class="text-sm text-gray-300">Plugin</p>
+</div>
+</div>
+</div>
+<div class="flex-none w-64">
+<div class="group relative block overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWoqDZyN6t5-v0t5AnCMrMqr_VjwAdN6HFTcDHmcjwUAF6g8ClZg9mVt3ALORpfD23KC5gMzHDZ-ve86XCCyn0tWAYPoXf9-gQ5_Jvxlyn00nNazP2T8el13LR40Dgh4KxliU5fbS_BNJlg-47ySLXXOHJJzUSu_tbMvL7grIdkNs6df0utIcqDL41NCHxR2w5yZBvtXHViLNzhkOed_r9ofxiA8dM35YVyqIsLUBDRUmlW16JopcLnZhEQOzTyMbMo3dERlUc5WgA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 p-4">
+<h3 class="font-semibold text-white">Acoustic Essentials</h3>
+<p class="text-sm text-gray-300">Drumkit</p>
+</div>
+</div>
+</div>
+<div class="flex-none w-64">
+<div class="group relative block overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo0S4FUrbgGKsDLD_IeNQ7j0W3HjMlZlJOjmPuFvR1yORmI-0tJE3XaWiNXeoSinD01sUU_cKP_GsLLqFcPweAOV-QmxkxmXsA4FWVCxz-J7ce6NMKbZZA8Uv7a9FedvxvSOgE1ALm382SDenmT6nfx-rdZ_WJ2Z5XxEUC7ppmYVDVwSuYinCuBFGPvuQp-15w_XDxUarWIVjR0GP0mQzQi1qr4ITLGuD0yKMc1bVpkjPtASFW0w5tpypRoUZeEhhyGZPKlqcDrL6E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 p-4">
+<h3 class="font-semibold text-white">Vocal FX Suite</h3>
+<p class="text-sm text-gray-300">Plugin</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 sm:py-16">
+<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white px-4">Latest Releases</h2>
+<div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6 px-4">
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5HKuu8Wh7KVlQ69xy2dAPN1qFAoerksRlSS8atfC5gXi_wStEG2AhO7V_5S0Nltsr8BeIMp-JoicnS2q7JIV4jNi9xzjHLiSofgTW3mccFtm1K8qlYF8AyEYPsQ8wQClDVn8JC4ErIQy-Y8H10Eu4GUY18GDcgz9rbM3iZECcrQ7rK2vvSPqYIGtcu1eqvVV8oItDxIVg1qlB0TFzdWVPJCHf1ezahdEH3dol76iDtadP44C7b83AEWcmmqrNwOcwJElN1_-gK0XS"/>
+</div>
+<div class="mt-2">
+<h3 class="text-sm font-semibold text-gray-900 dark:text-white">Trap Titans Drumkit</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Drumkit</p>
+<button class="mt-2 w-full rounded-lg bg-primary py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">Download</button>
+</div>
+</div>
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhGdyuqZvfWGBEbgNoFNQW9lGk6bu_86e9NY0zNW1WwFWr5TMWh8KEPeOBiJEND3JW0v9YgPzCewxWhKtD4ktH-m26mAvMu_yIqsJSRXx5LSUJqXJnmwuN11WPEUXrZdOKc0iBP-nKqHRw7dEsfiGsgvAth1wa8RgLaSkR1huk4VaBxGVnHc1LbF2Ljy78uv6UnFZSCgtGkjJENvs9D0FwyJ-dv77bJt1gWucKwQycmaT_yg8QfAJkkKqha0JLvaPeZv56vtpbaoQk"/>
+</div>
+<div class="mt-2">
+<h3 class="text-sm font-semibold text-gray-900 dark:text-white">Ambient Textures</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Plugin</p>
+<button class="mt-2 w-full rounded-lg bg-primary py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">Download</button>
+</div>
+</div>
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsiYjbIrlXORLOZ36WU28ODKqpXzYoHwHE1GsBTICuW1qY6ekkL5ZtLYEPlQVnI1xYf2KZ5lE6yxoCcMpxK6mDDa8xgSUkXIwRY1gaW6JtfE3S-remM5TB0AZmkLb6O32o4PEavzr_ac5Uvw6eIT4KkO-u7hSr83Pc77QZrKanj78pcUB_218vMNVfWKHSw89cOuZbk5UU2_LFgGqyQ6Pa8N1XoOlrl7HhMM2PcJW6Jfh67Br7rSlVkeZDAeE-NVdEIp5kUWx_c9hl"/>
+</div>
+<div class="mt-2">
+<h3 class="text-sm font-semibold text-gray-900 dark:text-white">Indie Rock Drums</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Drumkit</p>
+<button class="mt-2 w-full rounded-lg bg-primary py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">Download</button>
+</div>
+</div>
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOWOM1sfVrRiNKTf-ZR80zG_cSE9yE9gA7KWq--zEmaTYUAybYkt1o03VTZwi-bTwPUbF4d-rlRcJVXnD4xFy-LGwhOsKPF4cz7Fg-Sl1DTlYo3vwYxVDk_Os4nwIuuex-hFiE7xrNPQulu5oh5qcv12esJOkCQUqWWILEv6KScowPPrWfVvxnAZitR2tM6PTdXNS6qO2BrqS929YE2eWLK5c7LdZBkRBQnqzKQbs0VCoib_6wZBeSjo9_SYXna1f52XyLhSfnuMbZ"/>
+</div>
+<div class="mt-2">
+<h3 class="text-sm font-semibold text-gray-900 dark:text-white">Dubstep Basslines</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Plugin</p>
+<button class="mt-2 w-full rounded-lg bg-primary py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">Download</button>
+</div>
+</div>
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgxObwv2JCWKWyINDWdHz6QHkmAZas7xvEywbWTSIthvtFEcoImvza3Y8W9T8SpmDfpQDNaI5xx2__UTi8mRNTaLrWc3hHVDnZWUs_XJHLvyhnCda-ciN3fCnL0hgh2HVm1Nq6dfEUwNnfMgX2ZT632u12DT2rNc110QkQUW6rqisKFR3WiRPq8ZpX7QbUKkSRoy-zin9hk9s1DIuqrahN0QltmjbKaFI9fpOtsl4dNYveTBaCkdp4dX4UQm-jq-dEaBorl_sW7u-7"/>
+</div>
+<div class="mt-2">
+<h3 class="text-sm font-semibold text-gray-900 dark:text-white">Lo-Fi Beats Pack</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Drumkit</p>
+<button class="mt-2 w-full rounded-lg bg-primary py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">Download</button>
+</div>
+</div>
+<div class="group">
+<div class="overflow-hidden rounded-lg">
+<img class="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNYOoxor9L6MRVD4_QFByXOzX4kXM6Ztmcslrd9EQOgo7Bb4dW_QSyFa3R7XyaW2NF_kkGEySseah7YIwn7JJ-5hzJGyjVoN91-DSxS8zr8SpGfoq3_Dfv7h77cpbPMxeYsOhsQJOzGOn5eQ6jmAVqJ4QF5FPt2mpA3Yfjqgp9VMq6a3_zYfy8LuJP7SYgm_nqUuyPNgqpT5cchrcrz9dbfSVVYORYApAlZou9QB9Pk73OseYK_VPWKvmbdB4oKrIZE-B_hT1ZlrLx"/>
+</div>
+<div class="mt-2">
+<h3 class="text-sm font-semibold text-gray-900 dark:text-white">Experimental FX</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400">Plugin</p>
+<button class="mt-2 w-full rounded-lg bg-primary py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">Download</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-gray-200/50 dark:border-gray-800/50">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex flex-col items-center gap-8">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="flex justify-center gap-6">
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.237 2.636 7.855 6.356 9.312-.062-.052-.12-.107-.174-.165a.5.5 0 01.123-.705c.175-.12.34-.25.492-.392a.5.5 0 01.658-.046c.15.09.282.2.42.316a.5.5 0 01-.01.764c-.183.153-.378.293-.586.413a.5.5 0 01-.527.04c-2.92-1.28-4.83-4.083-4.83-7.447 0-4.418 3.582-8 8-8s8 3.582 8 8c0 3.364-1.91 6.167-4.83 7.447a.5.5 0 01-.527-.04c-.208-.12-.403-.26-.586-.413a.5.5 0 01-.01-.764c.138-.116.27-.226.42-.316a.5.5 0 01.658.046c.152.142.317.272.492.392a.5.5 0 01.123.705c-.054.058-.112.113-.174.165C19.364 19.855 22 16.237 22 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400">© 2025 DrumKitsHub. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
